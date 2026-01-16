@@ -267,6 +267,12 @@ func unitConversion(sizeWithUnit string) (int64, error) {
 		size *= 1024 * 1024
 	case "gb":
 		size *= 1024 * 1024 * 1024
+	case "tb":
+		size *= 1024 * 1024 * 1024 * 1024
+	case "pb":
+		size *= 1024 * 1024 * 1024 * 1024 * 1024
+	case "eb":
+		size *= 1024 * 1024 * 1024 * 1024 * 1024 * 1024
 	default:
 		// For "b" (bytes) or any other unit, keep the size as-is
 	}
